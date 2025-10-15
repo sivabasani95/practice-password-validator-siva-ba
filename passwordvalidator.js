@@ -1,5 +1,6 @@
 const readline = require('readline-sync');
-unction isValidPassword(password) {
+
+function isValidPassword(password) {
   // Requirement 1: At least 8 characters
   if (password.length < 8) {
     return false;
@@ -33,3 +34,4 @@ do {
 } while (!isValidPassword(password));
 
 console.log('✅ Success! Your password meets all the requirements.');
+
